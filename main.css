@@ -1,0 +1,163 @@
+/* ---------- DO NOT CHANGE ANYTHING IN THIS FILE ---------- */
+
+
+/*///////////////////////////////////////
+//	UNIVERSAL SETTINGS
+///////////////////////////////////////*/
+* {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/*///////////////////////////////////////
+//	SLIDER CONTENTS
+///////////////////////////////////////*/
+.frame {
+	width: 80%;
+	max-height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
+}
+
+.slider {
+	display: block;
+	/*width: 500%;*/
+	height: 100%;
+}
+
+.slide-item {
+	/*width: 20%;*/
+	height: 100%;
+	/*float: left;*/
+	/*position: relative;*/
+}
+
+img {
+	width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+
+
+/*//////////////////////////////////////
+//	SLIDER NAVIGATION BUTONS
+//////////////////////////////////////*/
+.slider-nav-container {
+	display: block;
+	width: 80%;
+	height: 20px;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+.slider-nav-container a {
+	background-color: #fff;
+	display: inline-block;
+	opacity: 1 !important;
+	height: 5px;
+	width: 5px;
+	margin-right: 2px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+
+.slider-nav-container a span {
+	display: none;
+}
+
+.slider-nav:hover {
+	opacity: 1;
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+
+/*//////////////////////////////////////
+//	SLIDER PREV + NEXT CONTROL BUTTON
+//////////////////////////////////////*/
+.ctrl_btn {
+	position: absolute;
+	height: 30%;
+	width: 3%;
+	border: none;
+	background-color: #ccc;
+	opacity: 0.5;
+	top: 35%;
+	bottom: 35%;
+	text-align: center;
+	color: #000;
+	font-weight: 100;
+	font-family: century gothic;
+	font-size: 1em;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+
+.ctrl_btn:hover {
+	opacity: 0.9 !important;
+	cursor: pointer;
+}
+
+.ctrl_btn:active {
+	opacity: 0.5 !important;
+	cursor: pointer;
+}
+
+.prev {
+	left:0%;
+}
+
+.next {
+	right: 0%;
+}
+
+/*//////////////////////////////////////
+//	HIDES/SHOW PREV + NEXT CONTROL BUTTON
+//////////////////////////////////////*/
+.show-btn {
+	opacity: 0.5 !important;
+	transistion: all 0.5s ease-in-out !important;
+	-webkit-transistion: all 0.5s ease-in-out !important;
+	-moz-transistion: all 0.5s ease-in-out !important;
+}
+.hide-btn {
+	opacity: 0;
+	transistion: all 0.5s ease-in-out;
+	-webkit-transistion: all 0.5s ease-in-out;
+	-moz-transistion: all 0.5s ease-in-out;
+}
+
+/*//////////////////////////////////////
+//	SLIDE CAPTION
+//////////////////////////////////////*/
+.caption {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.51);
+	padding: 1% 0%;
+	bottom: 0%;
+}
+
+.caption span {
+	padding-left:3%;
+	color: rgba(255, 255, 255, 0.77);
+	font-size: 1rem;
+}
